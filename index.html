@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Infiltração – Agência Sombra</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <style>
+    /*seletor da tag body*/
+    body {
+      background-color: #000; /*cor de fundo*/
+      color: #00ff00; /*cor dos textos*/
+      font-family: 'Courier New', monospace; /*tipo de letra*/
+      padding: 30px; /*espaçamento interno*/
+      text-align: center; /*alinhamento do texto*/
+    }
+
+    /*seletor da tag form*/
+    form {
+      background-color: #111; /*cor de fundo*/
+      border: 1px solid #00ff00; /*borda sólida (visível), com 1px de expessura e na cor verde*/
+      border-radius: 10px; /*raio da borda (deixa os cantos levemente arredondados*/
+      padding: 25px; /*espaçamento interno*/
+      max-width: 500px; /*largura máxima*/
+      margin: auto; /*margem (espaçamento externo*/
+      box-shadow: 0 0 10px #00ff00; /*sombra*/
+    }
+
+    /*seletor da tag label*/
+    label {
+      display: block; /*exibição em bloco*/
+      margin: 20px 0 5px; /*margem*/
+      text-align: left; /*alinhamento do texto (à esquerda)*/
+    }
+
+    /*seletor da tag input*/
+    input {
+      width: 100%; /*largura (ocupa 100%)*/
+      padding: 10px; /*espaçamento interno*/
+      background-color: #000; /*cor de fundo*/
+      color: #00ff00; /*cor do texto*/
+      border: 1px solid #00ff00; /*borda visível, com 1px de espaçamento e na cor verde*/
+      border-radius: 5px; /*raio da borda (arredondamento dos cantos*/
+    }
+
+    /*seletor da tag button*/
+    button {
+      margin-top: 20px; /*margem superior*/
+      padding: 10px 20px; /*espaçamento interno com valores na vertical e horizontal*/
+      background-color: #00ff00; /*cor de fundo*/
+      color: #000; /*cor do texto*/
+      font-weight: bold; /*peso da fonte (negrito)*/
+      border: none; /*borda (sem)*/
+      border-radius: 5px; /*raio da borda (arredondamento dos cantos)*/
+      cursor: pointer; /*cursor (clicável - ícone da "mãozinha"*/
+      transition: transform 0.2s; /*efeito de transição*/
+    }
+
+    /*efeito para quando leva o mouse em cima do botão*/
+    button:hover {
+      transform: scale(1.05); /*efeito de transformação da escala/tamanho (leve aumento do tamnanho original)*/
+      background-color: #33ff33; /*cor de fundo com leve aumento do tom, para escurecer um pouco*/
+    }
+
+    /*seletor da tag h1*/
+    h1 {
+      text-shadow: 0 0 10px #00ff00; /*sombra no texto*/
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🕶 Acesso Restrito - Sistema da Agência Sombra</h1>
+  <p>⚠️ Apenas agentes autorizados podem continuar. Complete sua infiltração digital.</p>
+
+  <form>
+    <label for="email">🧬 Identidade Codificada (e-mail):</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="senha">🔐 Senha de Desbloqueio:</label>
+    <input type="password" id="senha" name="senha" required>
+
+    <label for="url">📡 Canal Criptografado (URL):</label>
+    <input type="url" id="url" name="url">
+
+    <label for="search">🕵️‍♂️ Busca por Códigos Perdidos:</label>
+    <input type="search" id="search" name="search">
+
+    <button type="submit">💾 Iniciar Infiltração</button>
+  </form>
+
+</body>
+</html>
